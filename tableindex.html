@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Table Booking</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<!-- Table Booking -->
+
+<body>
+  <div class="table-container">
+    <h1 class="form-title">BOOK YOUR TABLE NOW</h1>
+    <form action="connect.php" method="post">
+      <div class="main-user-info">
+        <div class="user-input-box">
+          <label for="fullName">Full Name</label>
+          <input type="text" placeholder="Enter Full Name" name="fullname" required />
+        </div>
+        <div class="user-input-box">
+          <label for="email">Email</label>
+          <input type="email" placeholder="Enter Email" name="email" required />
+        </div>
+
+        <div class="user-input-box">
+          <label for="number">No. of persons</label>
+          <input type="number" placeholder="No. of persons " name="no_of_persons" required />
+        </div>
+        <div class="user-input-box">
+          <label for="Date">Date</label>
+          <input type="date" placeholder="Enter Date" name="date" required />
+        </div>
+        <div class="user-input-box">
+          <label for="time">Time</label>
+          <input type="time" placeholder="Enter time" name="time" required />
+        </div>
+        <div class="user-input-box">
+          <label for="phone_number">Phone Number</label>
+          <input type="text" placeholder="Enter Phone Number" name="phone_number" required />
+        </div>
+
+      </div>
+      <div class="form-submit-btn">
+        <input type="submit" value="Book Now" name="submit">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
