@@ -1,0 +1,141 @@
+/* Navigation */
+#navbar {
+    flex-direction: column;
+}
+
+#navbar ul li a {
+    font-size: 0.8rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+
+/* Home section */
+#home {
+    height: 370px;
+    padding: 3px 28px;
+    /* height: auto; */
+}
+
+#home::before {
+    height: 480px;
+}
+
+#home p {
+    font-size: 13px;
+}
+
+/* Utility Classes */
+
+.h-primary {
+    font-size: 26px;
+}
+
+/* Buttons */
+
+.btn {
+    font-size: 13px;
+    padding: 4px 8px;
+}
+
+/* menu section  */
+#menu{
+    flex-direction: column;
+    height: auto;
+    width: auto;
+}
+/* .container textarea{
+    width: 280px;
+    overflow: auto;
+} */
+
+
+/* @media(max-width: 600px) { */
+    /* .container {
+        min-width: 280px;
+    }
+
+    .user-input-box {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n) {
+        justify-content: space-between;
+    }
+
+    .main-user-info {
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar {
+        width: 0;
+    } */
+/* } */
+
+.box button  { 
+    margin: 15px 0px 15px 0px;
+    justify-content: space-evenly;
+    height: 283px;
+    width: 260px;
+}
+.box button a { 
+    height: 280px;
+    width: 255px;
+}
+ /* contact us Section */
+#contact_us{
+    height: auto;
+    width: auto;
+}
+.container{
+    /* min-width: 280px; */
+    width: auto;
+    overflow: auto;
+}
+.container form{
+    /* min-width: 280px; */
+    margin: 0px 10px 0px 10px ;
+    /* width: 100%; */
+    width: auto;
+    overflow: auto;
+}
+.container form #button {
+  
+    /* margin-top: 20px; */
+    margin-right: 150px;
+    /* height: auto; */
+    /* font-weight: 400;
+    font-size: 10px; */
+    /* margin-bottom: 30px; */
+}
+/* 
+.container form #button {
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    
+    color: #333;
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+} */
+ /* Review Section  */
+#reviews{
+   /* height: auto; */
+   width: auto;
+}
+.slider{
+    width: auto;
+    margin: 0px 20px 0px 20px ;
+}
+
+/* Feedback Section  */
+
+#feedbackarea{
+   height: auto;
+   width: auto;
+}
