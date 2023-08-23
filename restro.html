@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunger House</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <html>
+    <!-- navbar section -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../mainlogo01.png" alt="Hunger House">
+        </div>
+        <ul>
+            <li class="item"><a href="#home"><b>Home</b></a></li>
+            <li class="item"><a href="#menu"><b>Menu</b></a></li>
+            <li class="item"><a href="../table/tableindex.html"><b>Table Booking</b></a></li>
+            <li class="item"><a href="#contact_us"><b>Contact Us</b></a></li>
+            <li class="item"><a href="#reviews"><b>Reviews</b></a></li>
+            <li class="item"><a href="#feedbackarea"><b>Feedback</b></a></li>
+        </ul>
+        <!-- <button class="cartbtn">
+            <div id="cartlogo">
+                <img src="./carticon01.png" alt="cart">
+            </div>
+        </button> -->
+
+    </nav>
+    <!-- home section  -->
+    <section id="home">
+        <h1 class="h-primary">Welcome to Hunger House</h1>
+        <p>Good Food Is The Foundation Of Genuine Happiness&#128523;</p>
+        <button class="btn"><a href="#menu">Order Now&#127828;</a></button>
+    </section>
+    <!-- menu section  -->
+    <section id="menu">
+        <!-- <h1 class="h-primary">Menu</h1> -->
+        <!-- <div class="menus"> -->
+        <div id=box1 class="box"><button><a href="../shopping-cart/starter.php">Starters</a></button> </div>
+        <div id="box2" class="box"><button><a href="../shopping-cart/maincourse.php">Main Course</a></button></div>
+        <div id="box3" class="box"><button><a href="../shopping-cart/dessert.php">Desserts</a></button></div>
+    </div>
+
+    </section>
+
+    <!-- contact us section -->
+    <section id="contact_us">
+        <div class="container">
+            <form action="contact.php" method="post">
+                <h1>Contact Us</h1>
+                <input type="text" id="firstName" placeholder="First Name" name="firstname" required>
+                <input type="text" id="lastName" placeholder="Last Name" name="lastname" required>
+                <input type="email" id="email" placeholder="Email" name="email" required>
+                <input type="text" id="mobile" placeholder="Mobile" name="mobile" required>
+                <!-- <h4>Type Your Message Here....</h4> -->
+                   <!-- <textarea name="usermessage" id="textarea" cols="20" rows="8" placeholder="Your message"></textarea> -->
+                   <input type="text" id="usermessage" placeholder="Type Your Message Here...." name="usermessage" required>
+                <!-- <textarea name="usermessage" required></textarea> -->
+                <!-- <button class="btn" name="submit" >Send</button> -->
+                <input type="submit" value="Send" id="button" name="submit">
+             
+            </form>
+        </div>
+    </section>
+
+    <!-- review section  -->
+    <section id="reviews">
+        <!-- <h2>Review</h2> -->
+
+        <div class="slider">
+            <div class="images">
+                <input type="radio" name="slide" id="img1">
+                <input type="radio" name="slide" id="img2">
+                <input type="radio" name="slide" id="img3">
+                <input type="radio" name="slide" id="img4">
+                <input type="radio" name="slide" id="img5">
+
+                <img src="./review05.png" class="m1" alt="img1">
+                <img src="./review04.png" class="m2" alt="img2">
+                <img src="./review03.png" class="m3" alt="img3">
+                <img src="./review02.png" class="m4" alt="img4">
+                <img src="./review01.png" class="m5" alt="img5">
+            </div>
+            <div class="dots">
+                <label for="img1"></label>
+                <label for="img2"></label>
+                <label for="img3"></label>
+                <label for="img4"></label>
+                <label for="img5"></label>
+            </div>
+        </div>
+        </div>
+
+
+    </section>
+
+    <!-- feedback section  -->
+    <section id="feedbackarea">
+        <div class="feedback">
+            <form action="feedback.php" method="post">
+                <h3>Give Your Feedback</h3>
+                <label for="">name</label>
+                <input type="text" placeholder="name" name="name" required>
+                <label for="">e-mail</label>
+                <input type="email" placeholder="e-mail" name="email" required>
+                <label for="">phone number</label>
+                <input type="#" placeholder="phone number" name="phonenumber" required>
+                <label for="">your message</label>
+                <textarea name="feedback" id="" cols="20" rows="8" placeholder="Your message"></textarea>
+                <button class="btn" name="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!-- footer section  -->
+    <footer>
+        <div class="copyright">
+            Copyright &copy; www.hungerhouse.com. All rights reserved!
+        </div>
+    </footer>
+
+    </html>
+</body>
+
+</html>
