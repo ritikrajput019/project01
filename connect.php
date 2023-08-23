@@ -1,9 +1,9 @@
 <?php
 
 	$servername="localhost";
-    $username="id20821197_restauantwebsite";
-    $password="12345@Acro123";
-    $dbname="id20821197_restaurant";
+    $username="root";
+    $password="";
+    $dbname="restaurant";
 	$con= mysqli_connect($servername,$username,$password,$dbname);
 	if(!$con){
 	
