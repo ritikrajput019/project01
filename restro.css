@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(198 201 177 / 39%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Bree Serif', serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.25s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+/* #navbar ul li a:hover {
+
+    text-decoration: underline;
+    color: rgb(240, 239, 178);
+} */
+#navbar ul li a:hover,
+#navbar ul li a:active {
+    background-color: rgb(129, 128, 128);
+}
+
+#navbar ul li a:hover {
+    box-shadow: 5px 5px 7px rgb(0, 0, 0);
+}
+
+/* #navbar ul li a:hover, #navbar ul li a:active{
+    color: rgb(0, 0, 0);
+} */
+
+
+/* Restaurant Logo */
+
+#logo {
+    margin: 10px 34px;
+
+}
+
+#logo img {
+
+    height: 64px;
+    margin: -6px 47px -10px -28px;
+    border-radius: 50px;
+    box-shadow: 9px 2px 10px white;
+    transition: rotate 1s ease-in-out;
+
+}
+
+#logo img:hover {
+    rotate: 360deg;
+}
+
+
+ 
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    /* height: 100vh;
+    width: 100vw; */
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('./homebackground.jpg') no-repeat center center/cover;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.99;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Menu section */
+
+#menu {
+
+    height: 100vh; 
+    width: 98.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: rgb(197, 197, 197); */
+ background: url('./menubg02.jpg') no-repeat center center/cover; */
+}
+
+
+.box button {
+    transition-property: background-color;
+    transition-duration: 1s;
+    border-radius: 20px;
+
+}
+
+.box button:hover {
+    box-shadow: 4px 4px 15px white;
+}
+
+.btn:hover {
+    background-color: rgb(73, 231, 10);
+
+}
+
+#box1 button a {
+    background-image: url('./food03.jpg');
+}
+
+#box2 button a {
+    background-image: url('./food02.jpg');
+}
+
+#box3 button a {
+    background: url('./food05.jpg') no-repeat center center/cover;
+}
+
+.box button a {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 1px;
+    padding: 5px;
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    font-size: 60px;
+    font-family: 'Alkatra', cursive;
+    color: rgba(216, 203, 203, 0);
+    text-decoration: none;
+    transition: color 1s ease-in-out;
+
+}
+
+.box button a:hover {
+
+
+    color: rgb(245, 245, 245);
+}
+
+
+/* Contect Us Section */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300;1,400;1,500&display=swap');
+
+#contect_us {
+    font-family: 'poppoins', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    background: #08071d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(restro4.jpg)no-repeat center center/cover;
+    /* position: relative;  */
+}
+
+.container form {
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    /* backdrop-filter: blur(10px); */
+    flex-wrap: wrap;
+    /* position: inherit; */
+}
+
+.container form h1 {
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.container form input {
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+}
+input{
+    color: rgb(255, 255, 255);
+}
+
+.container form input::placeholder {
+    color: #ddd;
+}
+
+.container form #lastName,
+.container form #mobile {
+    margin-left: 20px;
+}
+
+.container form h4 {
+    color: #fff;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+
+/* .container form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+} */
+
+/* textarea::-webkit-scrollbar {
+    width: 2em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(194, 194, 194, 0.713);
+} */
+
+.container form #button {
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.container form #button:hover {
+    opacity: 0.7;
+}
+
+/* Reviews Section  */
+
+#reviews {
+
+    height: 100vh;
+    width: 98.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(reviewbg05.jpg)no-repeat center center/cover;
+    /* background: rgb(42, 24, 63); */
+    /* background-color: #333; */
+    /* background: url('./restro2.jpg') no-repeat center center/cover; */
+}
+
+/* #reviews h{
+    color: #ddd;
+} */
+/* h2{
+    font-size: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+} */
+
+.slider {
+    position: absolute;
+    width: 28%;
+    overflow: hidden;
+}
+
+.images {
+    display: flex;
+    /* position: absolute; */
+    /* width: 100%; */
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.images img {
+    height: 400px;
+    width: 100%;
+    border-radius: 20px;
+    transition: all 1s ease-in-out;
+}
+
+.images input {
+    display: none;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+.dots label:hover {
+    background: #fff;
+}
+
+#img1:checked~.m1 {
+    margin-left: 0;
+}
+
+#img2:checked~.m2 {
+    margin-left: -100%;
+}
+
+#img3:checked~.m3 {
+    margin-left: -200%;
+}
+
+#img4:checked~.m4 {
+    margin-left: -300%;
+}
+
+#img5:checked~.m5 {
+    margin-left: -400%;
+}
+
+/* Feedback Section  */
+
+#feedbackarea {
+
+    height: 92vh;
+    /* width: 100vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(feedback.jpg)no-repeat center center/cover;
+}
+
+
+
+.feedback {
+    height: 500px;
+    width: 500px;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 7px 5px 4px white;
+    background: url(feedback.jpg) no-repeat center center/cover;
+
+}
+
+.feedback form {
+    height: 300px;
+    width: 250px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-transform: capitalize;
+    border-radius: 30px;
+    color: #ffff;
+}
+
+.feedback form h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(233, 233, 233);
+}
+
+.feedback form label {
+    font-size: 1.3rem;
+    padding: 3px 0;
+
+}
+
+#feedbackarea .feedback form input {
+    padding: 8px;
+    border-radius: 20px;
+    margin: 5px 0 5px 0;
+    border: none;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.37);
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+#feedbackarea .feedback form textarea {
+    padding: 8px;
+    border-radius: 20px;
+    margin: 5px 0 5px 0;
+    border: none;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.37);
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+/* .feedback form input[input="button"]{
+    align-self:flex-end;
+    height: 30px;
+    width: 60px;
+    font-size: 100%;
+} */
+
+/* Footer section */
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+}
+
+
+/* Utility Classes */
+
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+
+
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+/* Buttons */
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgba(238, 43, 43, 0.945);
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-property: box-shadow;
+    transition-duration: 1s;
+
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(73, 231, 10);
+    box-shadow: 9px 7px 4px rgb(72, 85, 66);
+
+}
+
+.btn a {
+    transition: color 1s ease-in-out;
+}
+
+.btn a:hover {
+    color: black;
+
+}
