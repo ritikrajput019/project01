@@ -1,0 +1,33 @@
+body{
+    /* background: url(bg03.jpg)no-repeat center center/cover; */
+    background-color: rgb(235, 229, 229);
+}
+.card{
+    background-color: rgba(180, 174, 169, 0.596);
+    border-radius: 5px;
+    transition: all 0.25s ease-out;
+    /* border: solid rgb(0, 0, 0) 2px; */
+   box-shadow: 3px 2px 6px rgb(100, 97, 97);
+}
+.card:hover{
+    box-shadow: 7px 5px 9px rgb(100, 97, 97);
+    background-color: rgba(247, 246, 244, 0.767)   ;
+}
+
+.form-control{
+    background-color:rgba(226, 217, 210, 0.301);
+}
+.card-img-top{
+    border-radius: 20px;
+    /* transition: box-shadow 1s ease-in-out; */
+    /* border: solid rgb(0, 0, 0) 2px; */
+}
+.card-img-top:hover{
+
+    box-shadow: 3px 2px 6px rgb(100, 97, 97);
+}
+.starter{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
