@@ -1,6 +1,4 @@
-# project01
-
-Images 
+#Images 
 
 ![food01](https://github.com/ritikrajput019/project01/assets/108268201/028eda5e-0f39-4682-84df-7a947a9bfe5a)
 ![food03](https://github.com/ritikrajput019/project01/assets/108268201/8b0c0e6a-6562-4d28-9e4c-908c6e12c81b)
